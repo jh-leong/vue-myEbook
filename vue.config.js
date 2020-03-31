@@ -1,8 +1,5 @@
 module.exports = {
-	// publicPath: process.env.NODE_ENV === 'production'
-	// 	? './'
-	// 	: '/'
-
+	publicPath: process.env.NODE_ENV === 'production' ? './' : '/',
 	configureWebpack: {
 		resolve: {
 			alias: {
@@ -14,5 +11,12 @@ module.exports = {
 				'utils': '@/utils'
 			}
 		}
-	}
+	},
+	// configureWebpack: {
+	// 	performance: {
+	// 		hints: 'warning',
+	// 		maxAssetSize: 524288,
+	// 		maxEntrypointSize: 524288,
+	// 	}
+	// }
 }

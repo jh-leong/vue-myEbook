@@ -87,6 +87,7 @@
 				const url = `${process.env.VUE_APP_RES_URL}/epub/` + this.fileName + '.epub'
 				// 1.ebook的解析和渲染
 				this.book = new Epub(url)
+				// this.book = new Epub('2014_Book_OpeningScience.epub')
 				this.setCurrentBook(this.book)
 				this.initRenDition()
 				// 2.定义操作手势
