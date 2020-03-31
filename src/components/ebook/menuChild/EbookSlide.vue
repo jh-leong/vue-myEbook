@@ -5,7 +5,7 @@
 				<div class="content" v-if="settingVisible===3">
 					<div class="content-page-wrapper" v-if="bookAvailable">
 						<div class="content-page">
-							<component :is="currentTab===1 ? content : bookMark"/>
+							<component :is="currentTab===1 ? content : bookmark"/>
 						</div>
 						<div class="content-page-tab">
 							<div class="content-page-tab-item"
